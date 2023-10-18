@@ -1,4 +1,4 @@
 package com.example.apidemo
 
-data class MyDataItems(val image: String
-, val name: String,val subTitle: String)
+data class MyDataItems(val imageurl: String
+, val name: String,val realname: String)

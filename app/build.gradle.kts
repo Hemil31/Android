@@ -5,12 +5,13 @@ plugins {
 
 android {
     namespace = "com.example.apidemo"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.apidemo"
         minSdk = 28
-        targetSdk = 33
+        //noinspection EditedTargetSdkVersion
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -46,4 +47,12 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+
+    // retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    // gson convertor
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    // image loader
+    implementation("com.github.bumptech.glide:glide:4.12.0")
 }

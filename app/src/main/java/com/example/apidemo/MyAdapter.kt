@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class MyAdapter(var con : Context,var userlist : List<MyDataItems>) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
@@ -21,10 +22,11 @@ class MyAdapter(var con : Context,var userlist : List<MyDataItems>) : RecyclerVi
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.title.text = userlist[position].name
-        holder.subTitle.text = userlist[position].subTitle
-
-        holder.image.setImageResource(userlist[position].image.toInt())
+//        holder.title.text = userlist[position].name
+//        holder.subTitle.text = userlist[position].subTitle
+//
+//        Glide.with(con).load(userlist[position].image).into(holder.image)
+       // holder.image.setImageResource(userlist[position].image.toInt())
 
     }
 
